@@ -1,14 +1,13 @@
 package pl.homework.app;
 
-import pl.homework.lib.Names;
-import pl.homework.utils.UserInterface;
+import pl.homework.utils.NamesTools;
 
 public class NamesTest {
     public static void main(String[] args) {
-        Names names = new Names();
-        UserInterface ui = new UserInterface();
+        String[] names = new String[5];
+        NamesTools namesTools = new NamesTools();
 
-        names.setNames(ui.setArray());
-        ui.printArray(names.getNames());
+        names = namesTools.setArray();
+        namesTools.printHello(names);
     }
 }
